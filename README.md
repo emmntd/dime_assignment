@@ -24,8 +24,7 @@ which I referred this as my **Data Lake** also give it the subpath with year, mo
 ***The year, month, day are come from the script running date or it can be replaced with execution_date that pass from the scheduler.***
 
 ## **Create Table on PostgresDB**
-Before create table, I need to prepare the table schema with **CREATE TABLE** script in case there's some column with specific column type e.g. date type or timestamp
-and then create if not exists (If there's a schema change I chose to drop it manually first for safer and re-create the table with the pipeline)
+Before create table, I need to prepare the table schema with **CREATE TABLE** script that saved in path **./sql/create_table/**, in case there's some column with specific column type e.g. date type or timestamp and then create if not exists (If there's a schema change I chose to drop it manually first for safer and re-create the table with the pipeline)
 
 ![image](https://user-images.githubusercontent.com/86764643/192816570-e4c341da-36f9-471c-84d0-e3a904f8524d.png)
 
